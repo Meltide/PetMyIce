@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:fillViewport="true"
+     android:fitsSystemWindows="true">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingEnd="24dp"
+         android:gravity="top|center"
+         android:orientation="vertical"
+         android:paddingBottom="24dp"
+         android:fitsSystemWindows="true"
+         android:paddingStart="24dp"
+         android:paddingTop="24dp">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?@attr/textAppearanceDisplaySmall"
+             android:textStyle="bold"
+             android:text="Galaxy Client" />
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp"
+             app:strokeColor="?attr/colorOutline"
+             app:cardElevation="4dp"
+             app:cardCornerRadius="16dp">
+
+            <ImageView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:adjustViewBounds="true"
+                 android:scaleType="fitCenter"
+                 android:src="@drawable/galaxy_client" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:text="百忙中抽出时间更新&#10;更新内容:&#10;*去除背景白色遮罩&#10;*设置界面去除斜边色块&#10;*GUI缩放适配&#10;*增加模组菜单功能&#10;*修复数余漏洞&#10;聊天群:765759947&#10;官网:https://outice2024.github.io/galaxy-packs&#10;暂不公布&#10;#edited 2025.02.04" />
+
+    </LinearLayout>
+
+</ScrollView>

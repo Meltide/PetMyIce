@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item> <!-- 4.4+ 半透明 -->
+        <item name="android:statusBarColor">@android:color/transparent</item> <!-- 5.0+ 全透明 -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+  </style>
+
+  <style name="AppTheme" parent="Base.AppTheme" />
+</resources>

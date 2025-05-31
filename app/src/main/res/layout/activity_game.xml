@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:fitsSystemWindows="true"
+     android:id="@+id/coordinator">
+
+    <com.google.android.material.appbar.AppBarLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/appbar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+             android:layout_height="?attr/actionBarSize"
+             android:layout_width="match_parent"
+             app:title="PetMyIce - 新游戏"
+             android:id="@+id/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:gravity="top|center"
+         android:orientation="vertical"
+         android:layout_marginTop="?attr/actionBarSize">
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="15dp"
+             app:cardElevation="2dp"
+             app:cardUseCompatPadding="true"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="12dp"
+                 android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                     android:layout_height="135dp"
+                     android:layout_width="135dp"
+                     app:cardElevation="0dp"
+                     app:cardCornerRadius="11dp"
+                     android:layout_gravity="left|center"
+                     android:id="@+id/avatar">
+
+                    <ImageView
+                         android:layout_height="match_parent"
+                         android:layout_width="match_parent"
+                         android:scaleType="centerCrop"
+                         android:src="@drawable/outice"
+                         android:id="@+id/avatarImg" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:orientation="vertical"
+                     android:layout_marginStart="15dp"
+                     android:layout_weight="1">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:ellipsize="end"
+                         android:textSize="18sp"
+                         android:textColor="?android:attr/textColorPrimary"
+                         android:maxLines="1"
+                         android:text="outice"
+                         android:textStyle="bold" />
+
+                    <TableLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:shrinkColumns="1"
+                         android:layout_marginTop="12dp"
+                         android:stretchColumns="1">
+
+                        <TableRow
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:paddingEnd="8dp"
+                                 android:textColor="?android:attr/textColorSecondary"
+                                 android:text="主人：" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:ellipsize="end"
+                                 android:textColor="?android:attr/textColorPrimary"
+                                 android:maxLines="1"
+                                 android:id="@+id/masterText"
+                                 android:text="未知" />
+
+                        </TableRow>
+
+                        <TableRow
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:paddingEnd="8dp"
+                                 android:textColor="?android:attr/textColorSecondary"
+                                 android:text="生命值：" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:ellipsize="end"
+                                 android:textColor="?android:attr/textColorPrimary"
+                                 android:maxLines="1"
+                                 android:id="@+id/bloodText"
+                                 android:text="未知" />
+
+                        </TableRow>
+
+                        <TableRow
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:paddingEnd="8dp"
+                                 android:textColor="?android:attr/textColorSecondary"
+                                 android:text="饱食度：" />
+
+                            <LinearLayout
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:orientation="horizontal">
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:ellipsize="end"
+                                     android:textColor="?android:attr/textColorPrimary"
+                                     android:maxLines="1"
+                                     android:id="@+id/foodText"
+                                     android:text="未知" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:alpha="0.7"
+                                     android:textColor="?android:attr/textColorSecondary"
+                                     android:text="/180" />
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:paddingEnd="8dp"
+                                 android:textColor="?android:attr/textColorSecondary"
+                                 android:text="好感度：" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:ellipsize="end"
+                                 android:textColor="?android:attr/textColorPrimary"
+                                 android:maxLines="1"
+                                 android:id="@+id/loveText"
+                                 android:text="未知" />
+
+                        </TableRow>
+
+                        <TableRow
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:paddingEnd="8dp"
+                                 android:textColor="?android:attr/textColorSecondary"
+                                 android:text="推倒次数：" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:ellipsize="end"
+                                 android:textColor="?android:attr/textColorPrimary"
+                                 android:maxLines="1"
+                                 android:id="@+id/countText"
+                                 android:text="未知" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="8dp"
+             android:layout_marginHorizontal="16dp"
+             app:cardElevation="2dp"
+             app:cardUseCompatPadding="true"
+             android:layout_marginTop="8dp"
+             app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="12dp"
+                 android:orientation="vertical">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_marginBottom="8dp"
+                     android:textAppearance="?attr/textAppearanceBodySmall"
+                     android:textColor="?attr/colorOnSurfaceVariant"
+                     android:text="消息列表" />
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:paddingVertical="8dp"
+                     android:orientation="horizontal">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:paddingEnd="12dp"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:alpha="0.6"
+                             android:textAppearance="?attr/textAppearanceBodyLarge"
+                             android:textColor="?attr/colorOnSurface"
+                             android:text="操作" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:alpha="0.6"
+                             android:textAppearance="?attr/textAppearanceBodyLarge"
+                             android:textColor="?attr/colorOnSurface"
+                             android:layout_marginTop="4dp"
+                             android:text="outice：" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="0dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:textAppearance="?attr/textAppearanceBodyLarge"
+                             android:ellipsize="end"
+                             android:textColor="?attr/colorOnSurface"
+                             android:maxLines="1"
+                             android:id="@+id/actionText"
+                             android:text="领养了outice"
+                             android:textStyle="bold" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:textAppearance="?attr/textAppearanceBodyLarge"
+                             android:ellipsize="end"
+                             android:textColor="?attr/colorOnSurface"
+                             android:layout_marginTop="4dp"
+                             android:maxLines="2"
+                             android:id="@+id/msgText"
+                             android:text="XX，你就是我的主人了！"
+                             android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:alpha="0"
+             android:layout_margin="8dp"
+             android:textSize="15sp"
+             android:id="@+id/reburnBtn"
+             android:text="看广告复活" />
+
+        <FrameLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent">
+
+            <GridLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="20dp"
+                 android:columnOrderPreserved="false"
+                 android:layout_marginHorizontal="16dp"
+                 android:alignmentMode="alignMargins"
+                 android:layout_gravity="bottom"
+                 android:columnCount="2"
+                 android:rowCount="2">
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_margin="8dp"
+                     android:textSize="15sp"
+                     android:layout_columnWeight="1"
+                     android:id="@+id/ruaBtn"
+                     android:text="RUA" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_margin="8dp"
+                     android:textSize="15sp"
+                     android:layout_columnWeight="1"
+                     android:id="@+id/eatBtn"
+                     android:text="投喂" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_margin="8dp"
+                     android:textSize="15sp"
+                     android:layout_columnWeight="1"
+                     android:id="@+id/playBtn"
+                     android:text="玩耍" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:layout_margin="8dp"
+                     android:textSize="15sp"
+                     android:layout_columnWeight="1"
+                     android:id="@+id/fuckBtn"
+                     android:text="推倒" />
+                
+            </GridLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
