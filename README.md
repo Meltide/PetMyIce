@@ -10,6 +10,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Meltide/PetMyIce)
 ![GitHub Created At](https://img.shields.io/github/created-at/Meltide/PetMyIce) 
 
-领养一只属于你的outice
+**领养一只属于你的outice**
 
 </div>
