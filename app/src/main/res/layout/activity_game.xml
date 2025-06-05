@@ -309,7 +309,7 @@
         <Button
              android:layout_height="wrap_content"
              android:layout_width="wrap_content"
-             android:alpha="0"
+             android:visibility="invisible"
              android:layout_margin="8dp"
              android:textSize="15sp"
              android:id="@+id/reburnBtn"
@@ -365,7 +365,7 @@
                      android:layout_columnWeight="1"
                      android:id="@+id/fuckBtn"
                      android:text="推倒" />
-                
+
             </GridLayout>
 
         </FrameLayout>

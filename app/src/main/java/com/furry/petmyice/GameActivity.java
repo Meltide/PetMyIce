@@ -416,7 +416,7 @@ public class GameActivity extends AppCompatActivity {
                 actionText.setText("看广告复活了outice");
                 msgText.setText(name + "，我回来了");
                     
-                reburnBtn.setAlpha(0);
+                reburnBtn.setVisibility(View.INVISIBLE);
                 reburnBtn.setEnabled(false);
                 
                 dialog.dismiss();
@@ -438,7 +438,7 @@ public class GameActivity extends AppCompatActivity {
         playBtn.setEnabled(false);
         fuckBtn.setEnabled(false);
         
-        reburnBtn.setAlpha(1);
+        reburnBtn.setVisibility(View.VISIBLE);
         reburnBtn.setEnabled(true);
     }
     
